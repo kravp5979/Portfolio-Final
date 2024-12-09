@@ -15,58 +15,63 @@
         overflow-x: hidden;
       }
 
-      /* Logo (Peter.) */
-      .logo {
-        position: absolute;
-        top: 32px;
-        left: 82px;
-        font-size: 30px;
-        font-weight: bold;
-        line-height: 1.28;
-        text-align: left;
-        color: #8B51F5;
-      }
+/* Logo (Peter.) */
+.logo {
+  position: fixed; /* Fix the logo to the bar */
+  top: 25px; /* Adjust vertical alignment to fit within the bar */
+  left: 50px; /* Adjust horizontal alignment to fit your design */
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 1.28;
+  text-align: left;
+  color: #8B51F5;
+  z-index: 1100; /* Higher z-index to ensure it appears above other elements */
+}
 
-      .logo span.grey {
-        color: #7A7A7A;
-      }
+.logo span.grey {
+  color: #7A7A7A;
+}
 
-      /* Link Bar */
       .link-bar-1 {
-        position: absolute;
-        top: 27px;
-        left: 621px;
-        width: 656px;
-        height: 60px;
-        color: #444444;
-        font-family: "Source Sans Pro", sans-serif;
-        font-weight: 400;
-        font-size: 16px;
-        text-align: center;
-      }
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%; 
+  height: 100px;
+  color: #444444;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  text-align: right; 
+  background-color: #F7F6F6;
+  z-index: 1000;
+  line-height: 100px;
+  padding-right: 50px;
+}
 
-      /* Link Styling */
-      .link-bar-1 ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        display: flex;
-        justify-content: space-between;
-      }
+.link-bar-1 ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+}
 
-      .link-bar-1 li {
-        display: inline;
-      }
+.link-bar-1 li {
+  display: inline-block;
+}
 
-      .link-bar-1 a {
-        text-decoration: none;
-        color: #444444;
-        transition: color 0.3s ease;
-      }
+.link-bar-1 a {
+  text-decoration: none;
+  color: #444444;
+  transition: color 0.3s ease;
+}
 
-      .link-bar-1 a:hover {
-        color: #8B51F5;
-      }
+.link-bar-1 a:hover {
+  color: #8B51F5;
+}
+
 
       /* "Hi, I'm Peter Kravets" */
       .paragraph-intro {
@@ -365,6 +370,26 @@
         <li><a href="#model-acting">Model/Acting</a></li>
       </ul>
     </nav>
+    
+    <!-- Digital Art Section -->
+<div id="digital-art" class="paragraph-digital">
+  Digital <span class="purple">Art</span>
+</div>
+
+<!-- Design Section -->
+<div id="design" class="paragraph-trojan">
+  Design - <span class="purple">Trojan Rebrand</span>
+</div>
+
+<!-- Video/Audio Section -->
+<div id="video-audio" class="paragraph-2">
+  <span>Design - <span style="color: #8B51F5;">Documentary</span></span>
+</div>
+
+<!-- Model/Acting Section -->
+<div id="model-acting" class="paragraph-4">
+</div>
+
 
     <!-- "Hi, I'm Peter Kravets" Section -->
     <div class="paragraph-intro">
@@ -392,6 +417,7 @@
       Digital <span class="purple">Art</span>
     </div>
 
+    
     <!-- Poster Images -->
     <img src="poster1.jpg" alt="Digital Art Poster 1" class="poster1-jpg">
     <img src="poster2.jpg" alt="Digital Art Poster 2" class="poster1-jpg-1">
