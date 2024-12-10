@@ -15,62 +15,62 @@
         overflow-x: hidden;
       }
 
-/* Logo (Peter.) */
-.logo {
-  position: fixed;
-  top: 25px;
-  left: 50px; 
-  font-size: 40px;
-  font-weight: bold;
-  line-height: 1.28;
-  text-align: left;
-  color: #8B51F5;
-  z-index: 1100;
-}
+      /* Logo (Peter.) */
+      .logo {
+        position: fixed;
+        top: 25px;
+        left: 50px;
+        font-size: 40px;
+        font-weight: bold;
+        line-height: 1.28;
+        text-align: left;
+        color: #8B51F5;
+        z-index: 1100;
+      }
 
-.logo span.grey {
-  color: #7A7A7A;
-}
+      .logo span.grey {
+        color: #7A7A7A;
+      }
 
       .link-bar-1 {
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: 100%; 
-  height: 100px;
-  color: #444444;
-  font-family: "Source Sans Pro", sans-serif;
-  font-weight: 400;
-  font-size: 20px;
-  text-align: right; 
-  background-color: #F7F6F6;
-  z-index: 1000;
-  line-height: 100px;
-  padding-right: 50px;
-}
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100px;
+        color: #444444;
+        font-family: "Source Sans Pro", sans-serif;
+        font-weight: 400;
+        font-size: 20px;
+        text-align: right;
+        background-color: #F7F6F6;
+        z-index: 1000;
+        line-height: 100px;
+        padding-right: 50px;
+      }
 
-.link-bar-1 ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: flex-end;
-  gap: 20px;
-}
+      .link-bar-1 ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: flex-end;
+        gap: 20px;
+      }
 
-.link-bar-1 li {
-  display: inline-block;
-}
+      .link-bar-1 li {
+        display: inline-block;
+      }
 
-.link-bar-1 a {
-  text-decoration: none;
-  color: #444444;
-  transition: color 0.3s ease;
-}
+      .link-bar-1 a {
+        text-decoration: none;
+        color: #444444;
+        transition: color 0.3s ease;
+      }
 
-.link-bar-1 a:hover {
-  color: #8B51F5;
-}
+      .link-bar-1 a:hover {
+        color: #8B51F5;
+      }
 
 
       /* "Hi, I'm Peter Kravets" */
@@ -327,7 +327,7 @@
         color: #7A7A7A;
         font-family: "Montserrat", sans-serif;
         font-weight: bold;
-        font-size: 48px;
+        font-size: 148px;
         line-height: 1.2;
         text-align: center;
       }
@@ -353,6 +353,16 @@
         line-height: 1.28;
         text-align: left;
       }
+
+      .cover-box {
+        position: absolute;
+        top: 100px;
+        left: 0;
+        width: 50%;
+        height: 85px;
+        background-color: #f7f6f6;
+        z-index: 10;
+      }
     </style>
   </head>
   <body>
@@ -362,14 +372,16 @@
     </div>
 
     <!-- Link Bar Section -->
-  <nav class="link-bar-1">
-  <ul>
-    <li><a href="#digital-art">Digital Art</a></li>
-    <li><a href="#design">Design</a></li>
-    <li><a href="#video-audio">Video/Audio</a></li>
-    <li><a href="#model-acting">Model/Acting</a></li>
-  </ul>
-</nav>
+    <nav class="link-bar-1">
+      <ul>
+        <li><a href="#digital-art">Digital Art</a></li>
+        <li><a href="#design">Design</a></li>
+        <li><a href="#video-audio">Video/Audio</a></li>
+        <li><a href="#model-acting">Model/Acting</a></li>
+      </ul>
+    </nav>
+
+    <div class="cover-box"></div>
 
 
     <!-- "Hi, I'm Peter Kravets" Section -->
@@ -384,7 +396,7 @@
     </div>
 
     <div class="paragraph-opening">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+      I’m passionate about using design, technology and narrative to deliver experiences that have meaning and impact. Whether it’s creating imagery that speaks volumes, rebranding a product, help making advertisements for companies, I’m here to make a difference with design and invention.
     </div>
 
     <!-- Photo Section -->
@@ -393,27 +405,28 @@
     <!-- Horizontal Line -->
     <hr class="horizontal-line">
 
-<!-- Digital Art Section -->
-<div class="paragraph-digital" id="digital-art">
-  Digital <span class="purple">Art</span>
-</div>
+    <!-- Digital Art Section -->
+    <div class="paragraph-digital" id="digital-art">
+      Digital <span class="purple">Art</span>
 
-<!-- Design Section -->
-<div class="paragraph-trojan" id="design">
-  Design - <span class="purple">Trojan Rebrand</span>
-</div>
+    </div>
 
-<!-- Video/Audio Section -->
-<div class="paragraph-2" id="video-audio">
-  <span>Design - <span style="color: #8B51F5;">Documentary</span></span>
-</div>
+    <!-- Design Section -->
+    <div class="paragraph-trojan" id="design">
+      Design - <span class="purple">Trojan Rebrand</span>
+    </div>
 
-<!-- Model/Acting Section -->
-<div class="paragraph-4" id="paragraph-6">
-  Model/Acting
-</div>
+    <!-- Video/Audio Section -->
+    <div class="paragraph-2" id="video-audio">
+      <span>Video/Audio - <span style="color: #8B51F5;">Documentary</span></span>
+    </div>
 
-    
+    <!-- Model/Acting Section -->
+    <div class="paragraph-4" id="model-acting">
+      Model/Acting
+    </div>
+
+
     <!-- Poster Images -->
     <img src="poster1.jpg" alt="Digital Art Poster 1" class="poster1-jpg">
     <img src="poster2.jpg" alt="Digital Art Poster 2" class="poster1-jpg-1">
@@ -421,7 +434,7 @@
 
     <!-- Text Under Posters -->
     <div class="paragraph-poster">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      This poster series is me, as a designer, trying to find my creative identity. Each piece is a reflection of something that I’ve always considered design. The first, "I Will," is one of ambition and resolve, manifested in big typeface and a large self-portrait. Second part: "Who is Peter?" - layers collage to tell my creative story and inspiration behind my style. And last but not least "Good Style is Paradoxical", that abstract, dynamic composition shows the dualistic aspect of my design ethos. It was a project that merged my own personal narrative with artistic play, which proved I could speak visually with my bold ideas and contrasting imagery.
     </div>
 
     <div class="paragraph-trojan">
@@ -429,7 +442,7 @@
     </div>
 
     <div class="paragraph-t" style="position: absolute; top: 1854px; left: 82px; width: 1217px; height: 257px;">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      This was a branding and visual identity rewrite for the Trojan condom brand. I started by looking at the brand as it is, and determining where it is failing and comparing it to competitors to see where it could improve. From here, I designed a new logo, packaging and brand identity with fresh typography and bold color palette. The rebrand was accompanied by a marketing campaign including slogans, social media content, and a short video spot. Through this whole project, I learned a lot about branding, design, and Adobe software like Illustrator, InDesign, and Express.
     </div>
 
     <img src="01.png" alt="First Big Photo" class="01-png" style="position: absolute; top: 2175px; left: 49px;">
@@ -457,14 +470,14 @@
     <hr class="horizontal-line-1-copy-3" style="position: absolute; top: 3879px; left: 0; width: 1366px; height: 0px; border-color: #7A7A7A; border-width: 1px; border-style: solid; opacity: 0.3;">
 
     <div class="paragraph-2" style="position: absolute; top: 3912px; left: 201px;">
-      <span>Design - <span style="color: #8B51F5;">Documentary</span></span>
+      <span>Video/Audio - <span style="color: #8B51F5;">Documentary</span></span>
     </div>
 
     <iframe class="video-player-5" src="https://www.youtube.com/embed/SZwczWQlmjw" style="position: absolute; top: 4049px; left: 41px; width: 765px; height: 525px; background: #E6E6E6; border: 1px solid #7A7A7A; border-style: solid;" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
     </iframe>
 
     <div class="paragraph-3" style="position: absolute; top: 4049px; left: 832px;">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      This documentary examines the mental health epidemic in university students with a focus on our school and health care services. Alongside my team, we determined what drove mental health crises and reviewed university resources. Interviews and studies will help inform, provoke discussion and call for better mental health services on campus. This project enhanced my expertise in a group filmmaking and storytelling.
     </div>
 
     <hr class="horizontal-line-1-copy-4" style="position: absolute; top: 4626px; left: 0; width: 1366px; height: 0px; border-color: #AAAAAA; border-width: 1px; border-style: solid; opacity: 0.3;">
@@ -487,12 +500,19 @@
     </div>
 
     <div class="paragraph-7" style="position: absolute; top: 4911px; left: 759px;">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      I got the opportunity to appear in a Cheetos commercial, which has been referred to as the "Beluga Whale" commercial. Filmed in Mexico, the effort was both funny and original, creating an unforgettable brand campaign. Yes, my hair was longer then, but that was all part of the energy and fun in the commercial. It was a great opportunity to test acting in the workplace while working on a fun, interactive advertising campaign.
     </div>
 
     <div class="paragraph-8" style="position: absolute; top: 5440px; left: 767px;">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      I even modeled for a Shoppers Drug Mart ad in an advertisement that featured a young, vigorous shot of me running. The shoot made a fun, relatable storyline which helps make the brand a family-friendly and relatable brand. It was a great way to experience modeling professionally and create an energetic idea.
     </div>
+
+    <footer style="text-align: right; margin-top: -60px; padding: -15px; background-color: #f7f6f6;">
+      <p style="font-family: 'Montserrat', sans-serif; font-size: 18px; font-weight: 400; color: #7A7A7A;">
+        Feel free to reach out:
+        <a href="mailto:pkravets@uwaterloo.ca" style="color: #8B51F5; text-decoration: none;">pkravets@uwaterloo.ca</a>
+      </p>
+    </footer>
 
     <hr class="horizontal-line2">
   </body>
